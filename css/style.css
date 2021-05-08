@@ -504,3 +504,290 @@ nav a{
 
 
 /* Sixth Section Design Starts */
+.SixthSection{
+    background: #EBEBF2;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+
+.SixthSection #SecondCarousel .item{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.SixthSection #SecondCarousel .item .SecondCarouselInnerBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.SixthSection #SecondCarousel .item .SecondCarouselInnerBox .SecondCarouselDeepInner img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.SixthSection #SecondCarousel .item .SecondCarouselInnerBox .SecondCarouselDeepInner h5{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.SixthSection #SecondCarousel .item .SecondCarouselInnerBox  .ratingsIMg{
+    width: 20%;
+    height: 30px;
+}
+
+.SixthSection #SecondCarousel .item .SecondCarouselInnerBox .SecondCarouselDeepInner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+
+#SecondCarousel .owl-carousel .owl-nav .owl-prev {
+    background: var(--btnColor);
+    position: absolute;
+    top: 35%;
+    right : -12%;    
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+} 
+
+#SecondCarousel .owl-carousel .owl-nav .owl-next{
+    position: absolute;
+    top: 35%;
+    left : -12%;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;    
+    border: 1px solid grey;
+}
+
+
+.SixthSection .SixthSectionthirdROw h4{
+    text-align: center;
+}
+
+
+.SixthSection .SixthSectionthirdROw p{
+    text-align: center;
+    color: grey;
+}
+
+@media only screen and (max-width:576px){
+    .SixthSection .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #SecondCarousel .owl-carousel .owl-nav{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Seventh Section Design */
+.seventhSection{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seventhSection #ThirdCarousel .item img{
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.seventhSection #ThirdCarousel .item p,.seventhSection #ThirdCarousel .item  h5{
+    text-align: center;
+}
+
+.seventhSection #ThirdCarousel .item p{
+    color: grey;
+}
+
+
+
+#ThirdCarousel .owl-carousel .owl-nav .owl-prev {
+    background: var(--btnColor);
+    position: absolute;
+    top: 35%;
+    right : -12%;    
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+} 
+
+#ThirdCarousel .owl-carousel .owl-nav .owl-next{
+    position: absolute;
+    top: 35%;
+    left : -12%;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;    
+    border: 1px solid grey;
+}
+
+
+@media only screen and (max-width:576px){
+    .seventhSection{
+        padding: 30px 0px;
+    }
+
+    .seventhSection .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #ThirdCarousel .owl-carousel .owl-nav{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Eighth Section */
+.EigthSection{
+    background: var(--greyColor);
+    padding: 50px 0px;
+}
+
+.EigthSection #FourthCarousel .item .fourthCarouselPart-2{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.EigthSection #FourthCarousel .item .fourthCarouselPart-2 p{
+    font-size: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.EigthSection #FourthCarousel .item .fourthCarouselPart-2 .secondPart_part-1,.EigthSection #FourthCarousel .item .fourthCarouselPart-2 .secondPart_part-2{
+    display: flex;
+}
+
+.EigthSection #FourthCarousel .item .fourthCarouselPart-2 img{
+    height: 20px;
+    width: 20px;
+}
+
+
+#FourthCarousel .owl-carousel .owl-nav .owl-prev {
+    background: var(--btnColor);
+    position: absolute;
+    top: 35%;
+    right : -12%;    
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+} 
+
+#FourthCarousel .owl-carousel .owl-nav .owl-next{
+    position: absolute;
+    top: 35%;
+    left : -12%;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;    
+    border: 1px solid grey;
+}
+
+
+@media only screen and (max-width:576px){
+    .EigthSection{
+        padding: 30px 0px;
+    }
+
+    .EigthSection .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #FourthCarousel .owl-carousel .owl-nav{
+        display: none;
+    }
+}
+
+
+
+.EigthSection .EightLayerBTn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* Nineth Section Design */
