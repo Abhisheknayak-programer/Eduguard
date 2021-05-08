@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --greyColor : #e5e5e54f;
+    --btnColor :  #1089FF;
+    --greenBtnColor : #00AF91;
+    --footerColor : #202029;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Navbar Design */
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 10vh;
+    font-weight: 500;
+}
+
+
+nav .burger{
+    display: none;
+}
+
+nav .nav-links-1,nav .navThirdPart,nav .nav-links-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    padding: 10px 17px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #1089FF;
+}
+
+nav .NavSearchIcon{
+    margin-top: 6px;
+}
+
+
+nav .NavDarkBtn{
+    background: #42414B;
+    color: white;
+    border-radius: 5px;
+}
+
+
+nav .NavDarkBtn:hover{
+    color: white;
+}
+
+nav a{
+    color: white;
+}
+
+@media only screen and (min-width:900px){
+    nav a{
+        color: #42414B;
+    }
+    
+    nav .nav-links-1,nav .nav-links-2{
+        margin-top: 20px;
+    }    
+}
+
+@media only screen and (max-width:900px){
+    nav .navThirdPart{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:650px){
+    nav{
+        justify-content: space-around;
+    }
+
+    nav .burger{
+        z-index: 2;
+        display: block;
+    }
+    
+    .burger .line-1, .burger .line-2, .burger .line-3{
+        width: 30px;
+        height: 4px;
+        background: black;
+        margin: 4px;
+    }
+
+    .nav-links-1{
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 100%;
+        height: 90vh;
+        background: rgb(0, 0, 0);
+        color: white !important;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        transform: translateX(-200%);
+        transition: all 0.5s ease-in;
+    }
+
+    .nav-links-1 li{
+        padding: 20px 0px;
+        font-size: 20px;
+    }
+
+
+    .nav-active{
+        /* display: none; */
+        transform: translate(0%);
+    }
+
+    .burger div{
+        transition: all 0.5s ease;
+    }
+
+    .toggle .line-1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+
+    .toggle .line-2{
+        opacity: 0;
+    }
+
+    .toggle .line-3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* First Section Design */
+.first_section{
+    min-height: 90vh;
+    border: 2px solid red;
+}
+
+
+
+
+
+
+/* Second Section */
+.second_section{
+    min-height: 60vh;
+    padding: 50px;
+}
+
+.section-heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 30px 0px;
+}
+
+
+.second_section #first .owl-carousel .owl-nav .owl-prev {
+    background: var(--btnColor);
+    position: absolute;
+    top: 35%;
+    right : -12%;    
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+} 
+
+.second_section #first .owl-carousel .owl-nav .owl-next{
+    position: absolute;
+    top: 35%;
+    left : -12%;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;    
+    border: 1px solid grey;
+}
+
+.SecondLayerBtn{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Third Section Design */
+.ThirdSection{
+    background: var(--greyColor);
+    padding: 50px 0px;
+}
+
+.ThirdSection .ThirdSectionFirstRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ThirdSection .ThirdSectionFirstRow .ThirdSectionHeading h1{
+    font-weight: bolder;
+}
+
+.ThirdSection .ThirdSectionFirstRow .ThirdSectionLinks ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ThirdSection .ThirdSectionFirstRow .ThirdSectionLinks ul li{
+    list-style: none;
+}
+
+.ThirdSection .ThirdSectionFirstRow .ThirdSectionLinks ul li a{
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    font-weight: 500;
+}
+
+.ThirdSection .ThirdSectionFirstRow .ThirdSectionLinks ul li .firstLink{
+    color: #1089FF;
+    border-bottom: 3px solid  #1089FF;
+}
+
+
+.ThirdSection .thirdSectionCard{
+    background: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+.ThirdSection .thirdSectionCard h5{
+    padding: 10px 0px;   
+}
+
+
+.ThirdSection .ThirdSectionSecondCardHolder{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ThirdSection .ThirdSectionSecondCardHolder .partitionItems{
+    display: flex;
+    align-items: center;
+}
+
+.ThirdSection .ThirdSectionSecondCardHolder .partitionItems p{
+    font-size: 10px;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+
+.ThirdSection .ThirdSectionFirstCardholder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ThirdSection .ThirdSectionFirstCardholder .profileAndName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ThirdSection .ThirdSectionFirstCardholder .profileAndName h6{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+
+.ThirdSection .ThirdSectionFirstCardholder del{
+    color: grey;
+}
+
+.ThirdSection .ThirdSectionFirstCardholder .profileAndName img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+
+@media only screen and (max-width:1200px) and (min-width:1000px){
+    .ThirdSection .ThirdSectionSecondCardHolder .partitionItems p{
+        font-size: 7px;
+        margin-top: 20px;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .second_section h1{
+        font-size: 20px;
+    }
+
+    .ThirdSectionFirstRow,.thirdSectionSecondRow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+    .ThirdSectionFirstRow h1{
+        text-align: center;
+    }
+
+    .ThirdSectionFirstRow .ThirdSectionLinks{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fourth Section */
+
+.fourthSection{
+    background: #EBEBF2;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourthSection .FourthSectionCardDesign{
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fourthSection .FourthSectionCardDesign p{
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width:576px){
+    .fourthSection .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+
+    .fourthSection .row .FourthSectionCardDesign{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fifth Section Design */
+.fifthSection{
+    background: white;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.fifthSection .heading_5{
+    font-weight: bolder;
+}
+
+.fifthSection .FifthSectionImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fifthSection .FifthSectionImg img{
+    border-radius: 20px;
+}
+
+.fifthSection .fifthSectionTextItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.fifthSection .fifthSectionTextItems h1{
+    font-size: 80px;
+    font-weight: bolder;
+    color: #00AF91;
+    opacity: 0.5;
+}
+
+.fifthSection .fifthSectionTextItems .innerBoxFifthLayerItem{
+    padding-left: 15px;
+}
+
+.fifthSection .fifthSectionTextItems .innerBoxFifthLayerItem p{
+    color: grey;
+}
+
+
+@media only screen and (max-width:576px){
+    .fifthSection .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+
+    .fifthSection .row a{
+        margin-bottom: 20px;
+    }
+
+    .fifthSection .fifthSectionTextItems h1{
+        font-size: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Sixth Section Design Starts */
