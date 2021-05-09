@@ -24,6 +24,7 @@ nav{
     align-items: center;
     min-height: 10vh;
     font-weight: 500;
+    background: white;
 }
 
 
@@ -160,7 +161,7 @@ nav a{
 
 /* First Section Design */
 .first_section{
-    min-height: 90vh;
+    min-height: 100vh;
     border: 2px solid red;
 }
 
@@ -791,3 +792,243 @@ nav a{
 
 
 /* Nineth Section Design */
+.NinethSection{
+    padding: 50px 0px;
+    background: #EBEBF2;
+}
+
+.NinethSection .NinethSectionCArd,.NinethSection .NinethSectionCArd  .NinethSectionInnnerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.NinethSection .NinethSectionCArd  .NinethSectionInnnerBox{
+    background: white;
+    border-radius: 10px;
+    padding: 50px 30px;
+}
+
+.NinethSection .NinethSectionCArd img{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 50px;
+    border-radius: 10px;
+}
+
+.NinethSection .NinethSectionCArd h4{
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.NinethSection .NinethSectionCArd p{
+    text-align: center;
+    color: grey;
+}
+
+.NinethSection .NinethSectionCArd a{
+    background: var(--greenBtnColor);
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media only screen and (max-width:576px){
+.NinethSection .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tenth Section Design */
+.tenthSection{
+    background: #EBEBF2;
+}
+
+
+.tenthSection .row .col{
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    border-radius: 10px;
+    z-index: 22;
+    position: relative;
+    top: 40px;
+}
+
+.tenthSection .row .col p{
+    color: grey;
+    text-align: center;
+}
+
+.tenthSection .row .col form{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tenthSection .row .col input{
+    outline: none;
+    width: 100%;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section */ 
+footer{
+    color: grey;
+    background: var(--footerColor);
+    padding-top: 70px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p{
+    font-size: 13px;
+}
+
+footer .FooterFirstCol {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .FooterFirstCol .logoImgFooter{
+    width: 50%;
+}
+
+footer .FooterFirstCol .footerSocialMedia{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .FooterFirstCol .footerSocialMedia li{
+    list-style: none;
+    border: 1px solid grey;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer .FooterFirstCol .footerSocialMedia li:nth-child(1):hover{
+    background: rgb(224, 40, 70);
+}
+
+
+footer .FooterFirstCol .footerSocialMedia li:nth-child(2):hover{
+    background: rgb(11, 149, 241);
+}
+
+
+footer .FooterFirstCol .footerSocialMedia li:nth-child(3):hover{
+    background: rgb(0, 200, 250);
+}
+
+
+footer .FooterFirstCol .footerSocialMedia li:nth-child(4):hover{
+    background: rgb(255, 0, 43);
+}
+
+
+footer .FooterFirstCol .footerSocialMedia li:nth-child(5){
+    padding: 6px 14px;
+}
+
+footer .FooterFirstCol .footerSocialMedia li:nth-child(5):hover{
+    background: rgb(40, 52, 224);
+}
+
+
+footer .FooterSecondCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .FooterSecondCol h5{
+    color: white;
+}
+
+footer .FooterSecondCol a{
+    text-decoration: none;
+    color: grey;
+    transition: all 0.5s ease;
+}
+
+footer .FooterSecondCol a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+footer .Footerbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .Footerbox a{
+    text-decoration: none;
+    color: grey;
+}
+
+
+
+@media only screen and (max-width:576px){
+    footer .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    
+    footer .FooterSecondCol{
+        align-items: flex-start;
+    }
+
+    footer .col{
+        padding: 0px 20px;
+        margin-bottom: 20px;
+    }
+
+    
+    .tenthSection .row .col{
+        top: 0px;
+        margin-bottom: 40px;
+    }
+}
